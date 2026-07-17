@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.hero {
+  min-height: 700px;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  border-bottom: 8px solid #232323;
+}
+
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #e50914;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+select {
+  background-color: black;
+  color: white;
+  border: 1px solid gray;
+  padding: 8px 14px;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 9px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.hero-content {
+  width: 85%;
+  max-width: 900px;
+  margin: 180px auto 0;
+  text-align: center;
+}
+
+.hero-content h2 {
+  font-size: 52px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+.email-box {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.email-box input {
+  width: 380px;
+  padding: 18px;
+  font-size: 16px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+.email-box button {
+  font-size: 20px;
+  padding: 15px 25px;
+}
+
+.feature {
+  min-height: 450px;
+  padding: 70px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  border-bottom: 8px solid #232323;
+}
+
+.reverse {
+  flex-direction: row;
+}
+
+.feature-text {
+  width: 50%;
+}
+
+.feature-text h2 {
+  font-size: 46px;
+  margin-bottom: 18px;
+}
+
+.feature-text p {
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.feature-image {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.tv-box,
+.device-box,
+.kids-box {
+  width: 360px;
+  height: 230px;
+  background-color: #111;
+  border: 12px solid #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e50914;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.phone-box {
+  width: 210px;
+  height: 330px;
+  background-color: #111;
+  border: 10px solid #555;
+  border-radius: 25px;
+  padding: 18px;
+}
+
+.phone-screen {
+  width: 100%;
+  height: 100%;
+  background-color: #e50914;
+  border-radius: 12px;
+}
+
+.faq {
+  padding: 70px 10%;
+  text-align: center;
+  border-bottom: 8px solid #232323;
+}
+
+.faq h2 {
+  font-size: 46px;
+  margin-bottom: 25px;
+}
+
+.question {
+  max-width: 900px;
+  margin: 8px auto;
+  padding: 24px;
+  background-color: #2d2d2d;
+  text-align: left;
+  font-size: 24px;
+}
+
+.faq p {
+  margin-top: 35px;
+  font-size: 20px;
+}
+
+footer {
+  padding: 50px 10%;
+  color: #b3b3b3;
+}
+
+footer p {
+  margin-bottom: 25px;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+.footer-links a {
+  color: #b3b3b3;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    width: 92%;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
+
+  .hero-content {
+    margin-top: 120px;
+  }
+
+  .hero-content h2 {
+    font-size: 34px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .email-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .email-box input {
+    width: 100%;
+  }
+
+  .feature,
+  .reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feature-text,
+  .feature-image {
+    width: 100%;
+  }
+
+  .feature-text h2,
+  .faq h2 {
+    font-size: 32px;
+  }
+
+  .feature-text p,
+  .question {
+    font-size: 18px;
+  }
+
+  .tv-box,
+  .device-box,
+  .kids-box {
+    width: 280px;
+    height: 180px;
+  }
+
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
